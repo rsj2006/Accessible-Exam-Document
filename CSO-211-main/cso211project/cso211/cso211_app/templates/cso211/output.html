@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Content and Voice Output</title>
+</head>
+<body>
+    <h1>Uploaded File Content</h1>
+    <pre>{{ extracted_text }}</pre>  <!-- Display the extracted text -->
+
+    <h2>Listen to the Content</h2>
+    {% if audio_url %}
+        <audio controls>
+            <source src="{{ audio_url }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    {% else %}
+        <p>No audio available.</p>
+    {% endif %}
+
+    <a href="/upload/">Upload Another File</a>
+</body>
+</html>

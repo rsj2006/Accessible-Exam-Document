@@ -1,0 +1,55 @@
+1.
+In C++, containers are typically implemented as class templates, so that the user can provide the desired element type as a template type argument.
+2.
+The Containers library is a part of the C++ standard library that contains various class types that implement some common types of containers. A class type that implements a container is sometimes called a container class. 
+Only the class types in the Containers library are considered to be containers in C++
+
+not considered to be containers by the C++ standard:
+
+C-style arrays
+std::string
+std::vector<bool>
+because std::string and std::vector<bool> implement most of the requirements, they behave like containers in most circumstances. As a result, they are sometimes called “pseudo-containers”.
+
+
+3.
+array-store contiguously-
+types-c-style arrays, vector, std::array
+
+
+
+1.
+In C++, containers are typically implemented as class templates, so that the user can provide the desired element type as a template type argument.
+2.
+The Containers library is a part of the C++ standard library that contains various class types that implement some common types of containers. A class type that implements a container is sometimes called a container class. 
+Only the class types in the Containers library are considered to be containers in C++
+
+not considered to be containers by the C++ standard:
+
+C-style arrays
+std::string
+std::vector<bool>
+because std::string and std::vector<bool> implement most of the requirements, they behave like containers in most circumstances. As a result, they are sometimes called “pseudo-containers”.
+
+
+3.
+array-store contiguously-
+types-c-style arrays, vector, std::array
+
+1.
+In C++, containers are typically implemented as class templates, so that the user can provide the desired element type as a template type argument.
+2.
+The Containers library is a part of the C++ standard library that contains various class types that implement some common types of containers. A class type that implements a container is sometimes called a container class. 
+Only the class types in the Containers library are considered to be containers in C++
+
+not considered to be containers by the C++ standard:
+
+C-style arrays
+std::string
+std::vector<bool>
+because std::string and std::vector<bool> implement most of the requirements, they behave like containers in most circumstances. As a result, they are sometimes called “pseudo-containers”.
+
+
+3.
+array-store contiguously-
+types-c-style arrays, vector, std::array
