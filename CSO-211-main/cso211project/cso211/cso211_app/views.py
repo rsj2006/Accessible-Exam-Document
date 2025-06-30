@@ -14,7 +14,7 @@ from pdf2image import convert_from_path
 def home(request):
     return render(request, 'cso211/home.html')
 
-# Function to extract text from PDF using pdfplumber
+# Function to extract text from PDF 
 def extract_text_from_pdf(file_path):
     text = ""
     try:
