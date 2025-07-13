@@ -79,7 +79,7 @@ def read_text_out_loud(text):
         return None
     tts = gTTS(text=text, lang='en')
     
-    # Save the audio file directly to the 'uploads' directory
+   
     audio_file_path = os.path.join(settings.BASE_DIR, 'uploads', 'output.mp3')
     tts.save(audio_file_path)
     return audio_file_path
@@ -91,12 +91,12 @@ def upload_file(request):
         uploaded_file = request.FILES['file']
         upload_dir = os.path.join(settings.BASE_DIR, 'uploads')
         
-        # Use FileSystemStorage to save the uploaded file
+       
         fs = FileSystemStorage(location=upload_dir)
         file_path = fs.save(uploaded_file.name, uploaded_file)
         file_path = os.path.join(upload_dir, file_path)
 
-        # Extract text based on file type
+       
         file_extension = os.path.splitext(uploaded_file.name)[1].lower()
         extracted_text = ""
 
@@ -119,7 +119,7 @@ def upload_file(request):
         else:
             extracted_text="Failed to find any text from the file"
 
-        # Generate audio file from extracted text and save it in 'uploads'
+        
         audio_path = read_text_out_loud(extracted_text)
         audio_url = None
         if audio_path:
